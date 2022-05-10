@@ -39,7 +39,9 @@
                 s.parentNode.insertBefore(t, s)
             }(window, document, 'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1196982997475583'); //pixel ID
+            fbq('init', '1196982997475583',
+               { em: '0addd0529041744659d8e10ce16bcce2137857e9500a14b452590683cc5302dd'  } //add email for PL usage, this can be hashed or unhashed
+               ); //pixel ID
             fbq('track', 'PageView'); //event type
             
         </script>
